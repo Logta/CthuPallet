@@ -1,5 +1,5 @@
 import { BaseLayout } from "@/components/layouts";
-import styles from "./Home.module.scss";
+import "./Home.module.scss";
 
 const App = () => (
   <BaseLayout>
