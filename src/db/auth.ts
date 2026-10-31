@@ -96,7 +96,7 @@ const createPasswordUser = async (data: any): Promise<boolean> => {
     await auth.createUserWithEmailAndPassword(data.email, data.password);
     return true;
   } catch (e) {
-    alert(JSON.stringify(e.message));
+    alert(JSON.stringify((e as Error).message));
     return false;
   }
 };
